@@ -1,0 +1,313 @@
+/*
+  Global CSS file
+*/
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+  z-index: 9999;
+  text-align: center;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: normal;
+}
+
+::-webkit-input-placeholder {
+	color:#aaa;
+	font-weight: 300;
+}
+::-moz-placeholder {
+	color:#aaa;
+	font-weight: 300;
+}
+:-ms-input-placeholder {
+	color:#aaa;
+	font-weight: 300;
+}
+input:-moz-placeholder {
+	color:#aaa;
+	font-weight: 300;
+}
+
+body {
+	background: #FFF;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+  // max-width: calc(768px + 16px * 2);
+  margin: 0 auto;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-page {
+  background: #fbfbfc;
+  border: 1px solid #85baea;
+}
+
+.app-bar {
+  background-image: linear-gradient(to right, #2c79f2, #00ccfd) !important;
+  display: flex;
+  align-content: center;
+ 
+} 
+
+.app-bar a {
+  display: flex;
+  color: white !important;
+}
+
+.app-bar a i {
+  color: white;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../../images/load_process.gif) center no-repeat #fff;
+}
+
+.home-page section {
+  margin: 3em auto;
+}
+.home-page section:first-child {
+  margin-top: 0;
+}
+.home-page section.centered {
+  text-align: center;
+}
+.home-page form {
+  margin-bottom: 1em;
+}
+.home-page form input {
+  outline: none;
+  border-bottom: 1px dotted #999;
+}
+.home-page span.at-prefix {
+  color: black;
+  margin-left: 0.4em;
+}
+.home-page div.home-page {
+  height: 100vh;
+}
+.home-page div.main-frame {
+  background-image: linear-gradient(to right, #2c79f2, #00ccfd);
+  padding: 2% 4%;
+  margin: 1px;
+  height: 50%;
+  color: white;
+  box-shadow: 0 3px 0px 0 rgba(0, 0, 0, 0.2), 0 3px 0px 0 rgba(0, 0, 0, 0.19);
+}
+.home-page div.top-div {
+  background-image: linear-gradient(to right, #2e82ff, #09ccff);
+  padding: 5% 7%;
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  font-size: 4vw;
+}
+.home-page div.top-div:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  /* hide shadow behind image */
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  width: 70%;
+  left: 15%;
+  /* one half of the remaining 30% */
+  height: 100px;
+  bottom: 0;
+}
+.home-page div.top-div div.top-title {
+  text-align: center;
+}
+.home-page div.top-div div.traffic {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 3.5vw;
+}
+.home-page div.top-div div.traffic > .traffic-text {
+  margin-left: 5%;
+}
+.home-page div.top-div div.traffic > .traffic-text > .src-dst {
+  margin-left: 7%;
+  width: 100%;
+}
+.home-page div.top-div div.traffic > .traffic-text > .est {
+  margin-top: 3%;
+}
+.home-page div.top-div div.traffic > .image-wrapper {
+  background: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page div.top-div div.traffic img {
+  width: 70px;
+}
+.home-page div.top-div div.weather {
+  display: flex;
+  align-items: center;
+  font-size: 3vw;
+  margin-top: 5%;
+  margin-right: 10%;
+  font-family: 'Arial Bold';
+  font-weight: bold;
+}
+.home-page div.top-div div.weather > .weather-text {
+  flex: 1;
+}
+.home-page div.top-div div.weather > .weather-text > .time {
+  margin-left: 3%;
+  margin-bottom: 3%;
+}
+.home-page div.top-div div.weather img {
+  width: 70px;
+}
+.home-page div.currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.home-page div.currency img {
+  width: 50px;
+}
+.home-page div.currency > .currency-text {
+  margin-left: 5%;
+  font-size: 3vw;
+}
+
+div.bottom-frame {
+  background: #fbfbfc;
+}
+.home-page div.destination {
+  background: white;
+  margin: 2% 5%;
+  padding: 3%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+}
+.home-page div.destination div.destination-text {
+  margin-left: 10%;
+  font-size: 4.5vw;
+  display: inline-block;
+  flex: 1;
+}
+.home-page div.bottom-frame {
+  margin: 1px;
+}
+.home-page div.flags {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+.home-page .from-to {
+  background: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  margin: 1% 5%;
+  padding: 5% 5% 11% 5%;
+  background: linear-gradient(to bottom, #352c69 0%, #190e52 12%, #190e52 47%, #352c69 100%) left bottom #fff no-repeat;
+  background-size: 100% 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.home-page .from-to .from-to-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.home-page .from-to .from-to-group > div {
+  margin: 0px 10px;
+}
+.home-page .from-to .from-to-group > div.switch-wrapper {
+  align-self: flex-end !important;
+}
+.home-page .from-to .from-to-group h3 {
+  font-size: 3vw;
+  padding-top: 20%;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: inherit;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.home-page .from-to .from-to-group p {
+  font-size: 3vw;
+}
+.home-page .from-to .from-to-group .switch-btn {
+  background-image: url('../../../../images/switch_btn_back.png');
+}
+.home-page .from-to .button-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 17%;
+}
+.home-page .from-to .button-group button.btn-view-map, .home-page .from-to .button-group button.btn-live-cam {
+  text-transform: none;
+}
+.home-page div.adsense {
+  background: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1% 5%;
+  padding: 5%;
+}
+
+.btn.primary-color {
+  background-color: #008de6;
+}
+
+.btn.white-color {
+  background: white;
+  color: black;
+  min-width: 64px;
+}
+
+.btn, .btn-large, .btn-small, .btn-flat {
+  padding: 0 7px;
+  text-transform: capitalize;
+}
+
+.btn i.left {
+  margin-right: 3px;
+}
+
+.camera img {
+  border: 1px solid white;
+}
